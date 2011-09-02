@@ -5,12 +5,12 @@
 Summary:	K Desktop Environment - Advanced Text Editor
 Summary(pl.UTF-8):	K Desktop Environment -  Zaawansowany edytor tekstu
 Name:		kate
-Version:	4.7.0
+Version:	4.7.1
 Release:	0.1
 License:	GPL
 Group:		X11/Applications/Editors
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
-# Source0-md5:	844ac138c6391f0266a9140cfd86d0b3
+# Source0-md5:	68edb488a616cc4bb41475ee129a22c3
 URL:		http://www.kde.org/
 # BuildRequires: FIXME
 Obsoletes:	kde4-kdebase-kwrite
