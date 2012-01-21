@@ -6,7 +6,7 @@ Summary:	K Desktop Environment - Advanced Text Editor
 Summary(pl.UTF-8):	K Desktop Environment -  Zaawansowany edytor tekstu
 Name:		kde4-kate
 Version:	4.8.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Editors
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.bz2
@@ -16,7 +16,7 @@ BuildRequires:	kde4-kdelibs-devel >= %{version}
 BuildRequires:	shared-mime-info
 Obsoletes:	kde4-kdebase-kwrite < 4.6.99
 Obsoletes:	kde4-kdesdk-kate < 4.6.99
-Obsoletes:	kate < 4.8.0
+Obsoletes:	kate <= 4.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -70,7 +70,7 @@ Summary:	kate development files
 Summary(pl.UTF-8):	Pliki dla programistów kate
 Group:		X11/Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Obsoletes:	kate-devel < 4.8.0
+Obsoletes:	kate-devel <= 4.8.0
 
 %description devel
 kate development files.
