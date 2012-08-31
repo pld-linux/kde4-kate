@@ -145,11 +145,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/*/*/actions/snippetadd.png
 %{_iconsdir}/*/*/actions/snippetedit.png
 %{_iconsdir}/*/*/apps/kate.*
-%{_includedir}/ktexteditor_codesnippets_core
 %{_kdedocdir}/en/kwrite
 %{_mandir}/man1/kate.1*
 
 %files devel
 %defattr(644,root,root,755)
 %{_includedir}/kate
+%{_includedir}/ktexteditor_codesnippets_core
 %{_includedir}/kate_export.h
