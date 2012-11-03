@@ -1,16 +1,16 @@
 %define		_state		stable
 %define		orgname		kate
-%define		qtver		4.8.1
+%define		qtver		4.8.3
 
 Summary:	K Desktop Environment - Advanced Text Editor
 Summary(pl.UTF-8):	K Desktop Environment -  Zaawansowany edytor tekstu
 Name:		kde4-kate
-Version:	4.9.2
+Version:	4.9.3
 Release:	1
 License:	GPL
 Group:		X11/Applications/Editors
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	a4e0704eb2d80119869f9d2a99eb7346
+# Source0-md5:	db0c2696d6a9951a59a8d4d25c46c32e
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdelibs-devel >= %{version}
 BuildRequires:	shared-mime-info
