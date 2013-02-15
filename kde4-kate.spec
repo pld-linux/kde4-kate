@@ -117,39 +117,29 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %ghost %{_libdir}/libkatepartinterfaces.so.?
 %attr(755,root,root) %{_libdir}/libkdeinit4_kate.so
 %attr(755,root,root) %{_libdir}/libkdeinit4_kwrite.so
-#%attr(755,root,root) %{_libdir}/libktexteditor_codesnippets_core.so
-#%attr(755,root,root) %{_libdir}/libktexteditor_codesnippets_core.so.*.*.*
-#%attr(755,root,root) %ghost %{_libdir}/libktexteditor_codesnippets_core.so.?
 %{_datadir}/apps/kate
 %{_datadir}/apps/katepart
 %{_datadir}/apps/katexmltools
 %{_datadir}/apps/kconf_update/kate-2.4.upd
 %{_datadir}/apps/ktexteditor_*
 %{_datadir}/apps/kwrite
-#%{_datadir}/config/katefiletemplates.knsrc
 %{_datadir}/config/katemoderc
-#%{_datadir}/config/katepartpluginsrc
 %{_datadir}/config/katerc
-#%{_datadir}/config/ktexteditor_codesnippets_core.knsrc
+%{_datadir}/config/kateschemarc
+%{_datadir}/config/katesyntaxhighlightingrc
 %{_datadir}/kde4/services/kate*.desktop
 %{_datadir}/kde4/services/ktexteditor_*.desktop
 %{_datadir}/kde4/services/plasma-applet-katesession.desktop
 %{_datadir}/kde4/servicetypes/kateplugin.desktop
-#%{_datadir}/mime/packages/ktesnippets.xml
 %{_desktopdir}/kde4/kate.desktop
-#%{_desktopdir}/kde4/ktesnippets_editor.desktop
 %{_desktopdir}/kde4/kwrite.desktop
 %{_iconsdir}/*/*/actions/debug.png
-#%{_iconsdir}/*/*/actions/repoadd.png
-#%{_iconsdir}/*/*/actions/repomanage.png
-#%{_iconsdir}/*/*/actions/snippetadd.png
-#%{_iconsdir}/*/*/actions/snippetedit.png
 %{_iconsdir}/*/*/apps/kate.*
+%{_iconsdir}/*/*/apps/ktexteditorautobrace.*
 %{_kdedocdir}/en/kwrite
 %{_mandir}/man1/kate.1*
 
 %files devel
 %defattr(644,root,root,755)
 %{_includedir}/kate
-#%{_includedir}/ktexteditor_codesnippets_core
 %{_includedir}/kate_export.h
