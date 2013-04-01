@@ -1,3 +1,8 @@
+# TODO:
+#        /usr/lib64/python2.7/site-packages/PyKate4/__init__.py
+#        /usr/lib64/python2.7/site-packages/PyKate4/kate.so
+#        /usr/share/kde4/services/pate.desktop
+
 %define		_state		stable
 %define		orgname		kate
 %define		qtver		4.8.3
@@ -6,7 +11,7 @@ Summary:	K Desktop Environment - Advanced Text Editor
 Summary(pl.UTF-8):	K Desktop Environment -  Zaawansowany edytor tekstu
 Name:		kde4-kate
 Version:	4.10.2
-Release:	1
+Release:	0.1
 License:	GPL
 Group:		X11/Applications/Editors
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
