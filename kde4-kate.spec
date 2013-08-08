@@ -10,12 +10,12 @@
 Summary:	K Desktop Environment - Advanced Text Editor
 Summary(pl.UTF-8):	K Desktop Environment -  Zaawansowany edytor tekstu
 Name:		kde4-kate
-Version:	4.10.5
+Version:	4.11.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Editors
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	66d0b3110fd4a96af3c62edd8c8f6e7d
+# Source0-md5:	3feb9e73b6c1be7c1a8e98c8803e39e1
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdelibs-devel >= %{version}
 BuildRequires:	shared-mime-info
@@ -132,13 +132,14 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/config/katerc
 %{_datadir}/config/kateschemarc
 %{_datadir}/config/katesyntaxhighlightingrc
+%{_datadir}/config/ktexteditor_codesnippets_core.knsrc
 %{_datadir}/kde4/services/kate*.desktop
 %{_datadir}/kde4/services/ktexteditor_*.desktop
 %{_datadir}/kde4/services/plasma-applet-katesession.desktop
 %{_datadir}/kde4/servicetypes/kateplugin.desktop
 %{_desktopdir}/kde4/kate.desktop
 %{_desktopdir}/kde4/kwrite.desktop
-%{_iconsdir}/*/*/actions/debug.png
+%{_iconsdir}/*/*/actions/debug-kategdb.png
 %{_iconsdir}/*/*/apps/kate.*
 %{_iconsdir}/*/*/apps/ktexteditorautobrace.*
 %{_kdedocdir}/en/kwrite
