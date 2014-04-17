@@ -10,18 +10,19 @@
 Summary:	K Desktop Environment - Advanced Text Editor
 Summary(pl.UTF-8):	K Desktop Environment -  Zaawansowany edytor tekstu
 Name:		kde4-kate
-Version:	4.12.4
+Version:	4.13.0
 Release:	1
 License:	GPL
 Group:		X11/Applications/Editors
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	d1211d6296757397922af912f4afa947
+# Source0-md5:	cdc4424955043025b0b166b81bad2f25
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdelibs-devel >= %{version}
+BuildRequires:	python-PyKDE4-devel >= %{version}
 BuildRequires:	shared-mime-info
+Obsoletes:	kate <= 4.8.0
 Obsoletes:	kde4-kdebase-kwrite < 4.6.99
 Obsoletes:	kde4-kdesdk-kate < 4.6.99
-Obsoletes:	kate <= 4.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -122,6 +123,9 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %ghost %{_libdir}/libkatepartinterfaces.so.?
 %attr(755,root,root) %{_libdir}/libkdeinit4_kate.so
 %attr(755,root,root) %{_libdir}/libkdeinit4_kwrite.so
+%dir %{py_sitedir}/PyKate4
+%{py_sitedir}/PyKate4/__init__.py
+%attr(755,root,root) %{py_sitedir}/PyKate4/kate.so
 %{_datadir}/apps/kate
 %{_datadir}/apps/katepart
 %{_datadir}/apps/katexmltools
@@ -135,8 +139,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/config/ktexteditor_codesnippets_core.knsrc
 %{_datadir}/kde4/services/kate*.desktop
 %{_datadir}/kde4/services/ktexteditor_*.desktop
+%{_datadir}/kde4/services/pate.desktop
 %{_datadir}/kde4/services/plasma-applet-katesession.desktop
 %{_datadir}/kde4/servicetypes/kateplugin.desktop
+%{_datadir}/kde4/servicetypes/katepythonplugin.desktop
 %{_desktopdir}/kde4/kate.desktop
 %{_desktopdir}/kde4/kwrite.desktop
 %{_iconsdir}/*/*/actions/debug-kategdb.png
