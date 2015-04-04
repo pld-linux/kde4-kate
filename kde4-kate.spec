@@ -11,7 +11,7 @@ Summary:	K Desktop Environment - Advanced Text Editor
 Summary(pl.UTF-8):	K Desktop Environment -  Zaawansowany edytor tekstu
 Name:		kde4-kate
 Version:	4.14.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Editors
 Source0:	http://download.kde.org/%{_state}/%{version}/src/%{orgname}-%{version}.tar.xz
