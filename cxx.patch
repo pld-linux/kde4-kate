@@ -1,0 +1,23 @@
+--- kate-4.14.3/part/view/kateviewhelpers.cpp~	2014-10-26 21:17:55.000000000 +0100
++++ kate-4.14.3/part/view/kateviewhelpers.cpp	2019-10-05 19:21:16.866710926 +0200
+@@ -77,7 +77,8 @@
+ #include <QtGui/QWhatsThis>
+ #include <QtGui/QLinearGradient>
+ 
+-#include <math.h>
++#include <cmath>
++#include <cstdint>
+ 
+ //BEGIN KateScrollBar
+ static const int s_lineWidth = 100;
+--- kate-4.14.3/part/view/kateviewhelpers.cpp~	2019-10-05 19:22:43.000000000 +0200
++++ kate-4.14.3/part/view/kateviewhelpers.cpp	2019-10-05 19:24:56.926703402 +0200
+@@ -1704,7 +1704,7 @@
+       if (realLine > -1) {
+         if (m_viewInternal->cache()->viewLine(z).startCol() == 0) {
+           if (m_viRelLineNumbersOn && m_view->viInputMode()) {
+-            int diff = abs(realLine - currentLine);
++            int diff = abs(realLine - (int)currentLine);
+             if (diff > 0) {
+               p.drawText( lnX + m_maxCharWidth / 2, y, lnWidth - m_maxCharWidth, h,
+                           Qt::TextDontClip|Qt::AlignRight|Qt::AlignVCenter, QString("%1").arg(diff) );
